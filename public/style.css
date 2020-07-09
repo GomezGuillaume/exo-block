@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    background-color: gray;
+}
+
+nav{
+    background-color: #718c00;
+    padding: 20px;
+}
+
+header{
+    text-align: center;
+    padding: 10%;
+}
+
+footer{
+    text-align: center;
+    padding: 10%;
+}
+
+p{
+    margin: 0 auto;
+    width: 50%;
+}
+
+.sidebar{
+    background-color: brown;
+    display: flex;
+}

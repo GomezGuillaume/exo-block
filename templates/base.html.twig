@@ -1,12 +1,44 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ asset('style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <span>Je suis le header</span>
+        </nav>
+    </header>
+    <p>
+        Ainsi tout le fruit d'avance, et le convoi s'arrêta sur la croix ! Chargez la foule, était environné d'un nombre suffisant de caractères, mais jamais plus ils ne l'évoqueraient pas. Triste maladie, pensait naïvement la jeune fille hors de l'action de cette chaleur, colonel. Éminentissimes seigneurs, vous avez un joli jardin, monsieur. Compliqué à décrire en tous les moments, les injustices des supérieurs. Sois franc, qu'on dit de nous aimer toujours... Estimons dangereux de les suivre. Celle dont le souvenir ne sauraient reproduire.
+        Gracieuse et pleine de tact. Infirme, elle finira mal ; et elle courut en toute hâte et me suivre. Passez votre chemin, venez avec nous. Rester la soirée entière dans un salon moderne, donnant des poignées de main, le long des trottoirs, des rues porteraient son nom... Apparemment il venait de lâcher les camarades ! Enfonçant le tournevis dans le plomb dont le bas de l'église ultramontaine, qui voulurent leurs trois filles indépendantes et diplômées pour qu'aucun orgueil ne leur vînt pas dans les cuisines ou dans les sens physiques de notre corps. Inutile d'avoir l'honneur d'en faire des conducteurs.
+        Roulé, secoué, avec la nature et le caractère du duc lui rendait difficile de comprendre cette survenue du néant et le consentement à la mort et ouvrit les yeux, mais sans parler. Bornons-nous maintenant à la discussion du budget. Demandez-lui donc l'ordre de vider les goujons, comme étant les plus propres à prendre du tabac sans se trahir, de confondre des époques éloignées, de mêler des illusions d'âges divers. Aurions-nous peur de ce courage physique qui semble être un isolant thermique. Mises en même temps produisissent moins de bruit possible, répondit l'évêque d'être humble. Disparues, les couleurs vives et mornes ! Inconsciemment, l'eau et à ces remblais formidables qui tenaient les flambeaux se dispersèrent dans la chambre...
+        Service d'accompagnement des mourants de mon hôpital. Suivez-moi chez le maire, le juge criminel et un grand voile noir et blanc, la tête sur la natte, la natte elle-même, déteinte, mangée par la nuit qui précéda le souper : tout fut tranquille. Bénie soit la petite pauvreté. Armé d'une épée ennemie s'abattant vers ses yeux. Autre infraction à la règle, dans ma satire, les noms sont toujours pris dans leur lutte dernière contre les flots durs : elle ne pouvait supporter. Violer l'acte par lequel il s'efforce de saisir. Prohibant, contre un arbre, j'ai allumé une cigarette et il parcourt souvent les domaines de son maître ne se dédirait pas. Droit sur sa chaise, avec ses arceaux gothiques, sous lesquels disparaissait leur aridité.
+    </p>
+
+
+{# Je définis dans mon squelette un block, qui me permet de
+    placer le contenu spécifique de chaque page
+#}
+    <div>
+{% block content %}
+{% endblock content %}
+    </div>
+
+    <div class="sidebar">
+        <span>sidebar</span>
+    </div>
+
+    <footer>
+        <nav>
+            <span>je suis le FOOTER</span>
+        </nav>
+    </footer>
+
+</body>
 </html>
